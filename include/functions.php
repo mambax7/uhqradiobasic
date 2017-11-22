@@ -8,10 +8,10 @@ function uhqradiobasic_fetchxml($ipfqdn, $port, $xmlpath, $auth, &$xmldata)
 
     // Load Module Config
 
-    $modhandler        =& xoops_gethandler('module');
-    $xoopsModule       =& $modhandler->getByDirname('uhq_radio');
-    $config_handler    =& xoops_gethandler('config');
-    $xoopsModuleConfig =& $config_handler->getConfigsByCat(0, $xoopsModule->getVar('mid'));
+    $moduleHandler        = xoops_getHandler('module');
+    $xoopsModule       =& $moduleHandler->getByDirname('uhq_radio');
+    $configHandler    = xoops_getHandler('config');
+    $xoopsModuleConfig = $configHandler->getConfigsByCat(0, $xoopsModule->getVar('mid'));
 
     // Check cache.  Use cached data if it's not too old.
 

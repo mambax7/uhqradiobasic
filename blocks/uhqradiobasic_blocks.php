@@ -80,7 +80,9 @@ function b_uhqradiobasic_status_show($options)
             // If the <artist> tag is missing, make sure we have our delimiter
             if (strpos(uhqradiobasic_isolatexml($xmlmount, '<title>', '</title>'), ' - ')) {
                 uhqradiobasic_titlesplit(
-                    uhqradiobasic_isolatexml($xmlmount, '<title>', '</title>'), $block['artist'], $block['title']
+                    uhqradiobasic_isolatexml($xmlmount, '<title>', '</title>'),
+                    $block['artist'],
+                    $block['title']
                 );
             } else {
                 // Otherwise, just do the title only.
@@ -90,7 +92,6 @@ function b_uhqradiobasic_status_show($options)
 
         // Extract Listener Count
         $block['count'] = uhqradiobasic_isolatexml($xmlmount, '<listeners>', '</listeners>');
-
     } elseif ($options[2] == "S") {
 
         // Extract Status
@@ -99,7 +100,9 @@ function b_uhqradiobasic_status_show($options)
         if ($status == 1) {
             // Extract Title & Split
             uhqradiobasic_titlesplit(
-                uhqradiobasic_isolatexml($xmlmount, '<SONGTITLE>', '</SONGTITLE>'), $block['artist'], $block['title']
+                uhqradiobasic_isolatexml($xmlmount, '<SONGTITLE>', '</SONGTITLE>'),
+                $block['artist'],
+                $block['title']
             );
             // Extract Listener Count
             $block['count'] = uhqradiobasic_isolatexml($xmlmount, '<CURRENTLISTENERS>', '</CURRENTLISTENERS>');
@@ -139,7 +142,6 @@ function b_uhqradiobasic_status_show($options)
 
         // Trim whitespace
         $block['statusdetail'] = trim($showname);
-
     }
 
     // Let's do an on-air link if we use it.
@@ -191,13 +193,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTC;
     $form .= "<input type='radio' name='options[2]' value= 'I' ";
     if ($options[2] == "I") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_SERVER_I;
     $form .= "<input type='radio' name='options[2]' value= 'S' ";
     if ($options[2] == "S") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_SERVER_S;
@@ -219,13 +221,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTG;
     $form .= "<input type='radio' name='options[5]' value= '1' ";
     if ($options[5] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_YES;
     $form .= "<input type='radio' name='options[5]' value= '0' ";
     if ($options[5] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_NO;
@@ -248,13 +250,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTJ;
     $form .= "<input type='radio' name='options[8]' value= '1' ";
     if ($options[8] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_YES;
     $form .= "<input type='radio' name='options[8]' value= '0' ";
     if ($options[8] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_NO;
@@ -264,13 +266,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTK;
     $form .= "<input type='radio' name='options[9]' value= '0' ";
     if ($options[9] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_SOL;
     $form .= "<input type='radio' name='options[9]' value= '1' ";
     if ($options[9] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTL;
@@ -281,13 +283,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTM;
     $form .= "<input type='radio' name='options[11]' value= '0' ";
     if ($options[11] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_EOL;
     $form .= "<input type='radio' name='options[11]' value= '1' ";
     if ($options[11] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTN;
@@ -300,13 +302,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTO;
     $form .= "<input type='radio' name='options[13]' value= '1' ";
     if ($options[13] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_YES;
     $form .= "<input type='radio' name='options[13]' value= '0' ";
     if ($options[13] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_NO;
@@ -352,13 +354,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTT;
     $form .= "<input type='radio' name='options[18]' value= '1' ";
     if ($options[18] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_YES;
     $form .= "<input type='radio' name='options[18]' value= '0' ";
     if ($options[18] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_NO;
@@ -368,13 +370,13 @@ function b_uhqradiobasic_status_edit($options)
     $form .= _MB_UHQRADIOBASIC_STATUS_OPTU;
     $form .= "<input type='radio' name='options[19]' value= '1' ";
     if ($options[19] == "1") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_YES;
     $form .= "<input type='radio' name='options[19]' value= '0' ";
     if ($options[19] == "0") {
-        $form .= "checked='checked'";
+        $form .= "checked";
     }
     $form .= "/>";
     $form .= _MB_UHQRADIOBASIC_NO;
