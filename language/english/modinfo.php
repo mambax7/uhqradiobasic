@@ -13,6 +13,6 @@ define("_MI_UHQRADIOBASIC_OPT_CACHE_TIME_DESC", "Seconds to cache gathered XML d
 // Block Information
 
 define("_MI_UHQRADIOBASIC_BLOCK_STATUS_NAME", "Radio Status");
-define("_MI_UHQRADIOBASIC_BLCOK_STATUS_DESC", "This block displays the current online status of the station, and if it's up, what song is now playing.");
+define("_MI_UHQRADIOBASIC_BLOCK_STATUS_DESC", "This block displays the current online status of the station, and if it's up, what song is now playing.");
 
-?>
+define("_MI_UHQRADIOBASIC_MENU1", "Configuration");

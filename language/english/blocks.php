@@ -5,9 +5,9 @@ define("_MB_UHQRADIOBASIC_ERROR_CONN", "Unable to connect: ");
 define("_MB_UHQRADIOBASIC_ERROR_UNSUP_S", "Unsupported server type ");
 define("_MB_UHQRADIOBASIC_ERROR_FBNF", "Fallback not found.");
 define("_MB_UHQRADIOBASIC_ERROR_MNF", "Mount not found.");
-define("_MB_UHQRADIOBASIC_ERROR_MT","Mount Type ");
-define("_MB_UHQRADIOBASIC_ERROR_NS"," not supported.");
-define("_MB_UHQRADIOBASIC_ERROR_SU","Stream Unavailable");
+define("_MB_UHQRADIOBASIC_ERROR_MT", "Mount Type ");
+define("_MB_UHQRADIOBASIC_ERROR_NS", " not supported.");
+define("_MB_UHQRADIOBASIC_ERROR_SU", "Stream Unavailable");
 
 define("_MB_UHQRADIOBASIC_ONAIR", "On-Air");
 define("_MB_UHQRADIOBASIC_ONAIR_IMG", "/modules/uhq_radiobasic/language/english/onair.png");
@@ -60,14 +60,12 @@ define("_MB_UHQRADIOBASIC_STATUS_OPTL", "Delimiter ");
 define("_MB_UHQRADIOBASIC_STATUS_OPTM", "End: ");
 define("_MB_UHQRADIOBASIC_STATUS_OPTN", "Delimiter ");
 
-define("_MB_UHQRADIOBASIC_STATUS_LINKHDR","<hr><b>Tune-In Links</b><br/><br/>");
+define("_MB_UHQRADIOBASIC_STATUS_LINKHDR", "<hr><b>Tune-In Links</b><br/><br/>");
 define("_MB_UHQRADIOBASIC_STATUS_OPTO", "Display tune-in Link? ");
 define("_MB_UHQRADIOBASIC_STATUS_OPTP", "Link URL: ");
 define("_MB_UHQRADIOBASIC_STATUS_OPTQ", "Target: ");
 define("_MB_UHQRADIOBASIC_STATUS_OPTRS", "Pop Up: ");
 
-define("_MB_UHQRADIOBASIC_STATUS_OPTIONHDR","<hr><b>Other Options</b><br/><br/>");
+define("_MB_UHQRADIOBASIC_STATUS_OPTIONHDR", "<hr><b>Other Options</b><br/><br/>");
 define("_MB_UHQRADIOBASIC_STATUS_OPTT", "Show Listeners? ");
 define("_MB_UHQRADIOBASIC_STATUS_OPTU", "Show Offline Errors? ");
-
-?>
