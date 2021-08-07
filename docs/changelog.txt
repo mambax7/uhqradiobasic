@@ -1,12 +1,21 @@
+<h5>1.20 Alpha 1   [WORK IN PROGRESS - NOT RELEASED]</h5>  Dev: XOOPS 2.5.11, PHP 7.4.22, PHP 8.0.9
+<hr>
+- namespaces (mamba)
+- class autoloading (mamba)
+- renamed 'PHP_SELF' to 'SCRIPT_NAME' (mamba)
+- Yoda
+- PHP7, PHP8 adjustments (mamba)
+- renamed .html to .tpl (mamba)
+
 ---------------------------------------
 1.11 Beta 2   2017-11-22
 ---------------------------------------
-- updated for XOOPS 2.5.9 and PHP 7
+- updated for XOOPS 2.5.9 and PHP 7 (mamba)
 
 ---------------------------------------
 1.11 Beta 1   2013-06-30
 ---------------------------------------
-- converted to XOOPS 2.5.6 Admin GUI
+- converted to XOOPS 2.5.6 Admin GUI (mamba)
 
 ---------------------------------------
 1.10  2009.07.11

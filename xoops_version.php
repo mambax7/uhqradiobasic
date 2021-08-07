@@ -3,7 +3,7 @@
 // Modular Definitions
 
 $modversion['version']       = 1.20;
-$modversion["module_status"] = "Beta 1";
+$modversion["module_status"] = "Alpha 1";
 $modversion['release_date']  = '2021/08/06';
 $modversion['name']          = _MI_UHQRADIOBASIC_NAME;
 $modversion['description']   = _MI_UHQRADIOBASIC_DESC;
