@@ -2,9 +2,9 @@
 
 // Modular Definitions
 
-$modversion['version']       = 1.11;
-$modversion["module_status"] = "Beta 2";
-$modversion['release_date']  = '2017/11/22';
+$modversion['version']       = 1.20;
+$modversion["module_status"] = "Beta 1";
+$modversion['release_date']  = '2021/08/06';
 $modversion['name']          = _MI_UHQRADIOBASIC_NAME;
 $modversion['description']   = _MI_UHQRADIOBASIC_DESC;
 $modversion['author']        = "Ian A. Underwood";
@@ -25,10 +25,10 @@ $modversion['icons32']        = '../../Frameworks/moduleclasses/icons/32';
 //about
 $modversion["module_website_url"]  = "www.xoops.org";
 $modversion["module_website_name"] = "XOOPS";
-$modversion['min_php']             = '5.2';
-$modversion['min_xoops']           = "2.5.6";
-$modversion['min_admin']           = '1.1';
-$modversion['min_db']              = array('mysql' => '5.0.7', 'mysqli' => '5.0.7');
+$modversion['min_php']             = '7.2';
+$modversion['min_xoops']           = "2.5.11";
+$modversion['min_admin']           = '1.2';
+$modversion['min_db']              = ['mysql' => '5.5'];
 
 // Configuration Items
 

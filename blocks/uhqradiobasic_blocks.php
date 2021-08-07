@@ -1,6 +1,6 @@
 <?php
-
-require_once(XOOPS_ROOT_PATH . '/modules/uhq_radiobasic/include/functions.php');
+$moduleDirName      = \basename(\dirname(__DIR__));
+require_once( XOOPS_ROOT_PATH . '/modules/' . $moduleDirName . '/include/functions.php');
 
 function b_uhqradiobasic_status_show($options)
 {

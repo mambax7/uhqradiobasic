@@ -1,5 +1,7 @@
 <?php
 
+$moduleDirName      = \basename(\dirname(__DIR__));
+
 define("_MB_UHQRADIOBASIC_ERROR", "There was an error: ");
 define("_MB_UHQRADIOBASIC_ERROR_CONN", "Unable to connect: ");
 define("_MB_UHQRADIOBASIC_ERROR_UNSUP_S", "Unsupported server type ");
@@ -10,9 +12,9 @@ define("_MB_UHQRADIOBASIC_ERROR_NS", " not supported.");
 define("_MB_UHQRADIOBASIC_ERROR_SU", "Stream Unavailable");
 
 define("_MB_UHQRADIOBASIC_ONAIR", "On-Air");
-define("_MB_UHQRADIOBASIC_ONAIR_IMG", "/modules/uhq_radiobasic/language/english/onair.png");
+define("_MB_UHQRADIOBASIC_ONAIR_IMG", XOOPS_ROOT_PATH . '/modules/' . $moduleDirName . '/language/english/onair.png');
 define("_MB_UHQRADIOBASIC_OFFAIR", "Off-Air");
-define("_MB_UHQRADIOBASIC_OFFAIR_IMG", "/modules/uhq_radiobasic/language/english/offair.png");
+define("_MB_UHQRADIOBASIC_OFFAIR_IMG", XOOPS_ROOT_PATH . '/modules/' . $moduleDirName . '/language/english/offair.png');
 define("_MB_UHQRADIOBASIC_NOWPLAYING", "Now Playing:");
 define("_MB_UHQRADIOBASIC_TUNEIN", "Tune In: ");
 define("_MB_UHQRADIOBASIC_TUNELINK", "Click Here");

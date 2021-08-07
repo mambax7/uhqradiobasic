@@ -45,6 +45,21 @@ $adminmenu[$i]['title'] = _MI_UHQRADIOBASIC_MENU1;
 $adminmenu[$i]['link']  = "admin/main.php";
 $adminmenu[$i]["icon"]  = $pathIcon32 . '/manage.png';
 
+// Blocks Admin
+$adminmenu[] = [
+    'title' => constant('CO_' . $moduleDirNameUpper . '_' . 'BLOCKS'),
+    'link' => 'admin/blocksadmin.php',
+    'icon' => $pathIcon32 . '/block.png',
+];
+
+if (is_object($helper->getModule()) && $helper->getConfig('displayDeveloperTools')) {
+    $adminmenu[] = [
+        'title' => constant('CO_' . $moduleDirNameUpper . '_' . 'ADMENU_MIGRATE'),
+        'link' => 'admin/migrate.php',
+        'icon' => $pathIcon32 . '/database_go.png',
+    ];
+}
+
 $i++;
 $adminmenu[$i]['title'] = _AM_MODULEADMIN_ABOUT;
 $adminmenu[$i]["link"]  = "admin/about.php";

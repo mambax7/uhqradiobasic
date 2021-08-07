@@ -4,7 +4,7 @@
 
 function uhqradiobasic_fetchxml($ipfqdn, $port, $xmlpath, $auth, &$xmldata)
 {
-    $cachefile = 'modules/uhq_radiobasic/cache/xml_' . $ipfqdn . '_' . $port . '.xml';
+    $cachefile = 'modules/uhqradiobasic/cache/xml_' . $ipfqdn . '_' . $port . '.xml';
 
     // Load Module Config
 
